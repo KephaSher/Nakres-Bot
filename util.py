@@ -1,6 +1,6 @@
 from time import time
 
-
+# a timer that could be incorporated as a decorator
 def timer(func):
     def inner(*args, **kwargs):
         starttime = time()
@@ -9,6 +9,6 @@ def timer(func):
 
         return (val, round(timespent, 3))
     return inner
-    
+
 def __main__(*args):
     return 0
