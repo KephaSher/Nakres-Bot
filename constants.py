@@ -1,3 +1,5 @@
+import numpy as np
+
 STARTING = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
 BLACK =  0b01000
@@ -22,8 +24,6 @@ FEN_TO_PIECE = {'r': BLACK | ROOK, 'R': WHITE | ROOK,
     ' ': NULL_PIECE}
 
 PIECE_TO_FEN = {v: k for k, v in FEN_TO_PIECE.items()}
-
-import numpy as np
 
 # MOVE MASK
 # --------------------------------------------------------------------------
